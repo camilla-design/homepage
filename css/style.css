@@ -238,7 +238,7 @@ header .navbar ul li a.active::before {
 
 .portfolio {
     padding: 100px 15px;
-    background-color: lightgray;
+    background-color: #f5f8fd;
 }
 .portfolio .section-title h1:before {
     left: 30;
@@ -274,9 +274,10 @@ header .navbar ul li a.active::before {
     justify-content: space-between;
 }
 .portfolio .portfolio-gallery .item {
-    flex: 0 0 calc(33.33% - 8px);
-    max-width: calc(33.33% - 8px);
-    margin-bottom: 8px;
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 16px;
+    position: relative;
 }
 .portfolio .portfolio-gallery .item img {
     width: 100%;
@@ -284,6 +285,35 @@ header .navbar ul li a.active::before {
 }
 .portfolio .portfolio-gallery .item .overlay {
     display: none;
+}
+.portfolio .portfolio-gallery .item:hover .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.portfolio .portfolio-gallery .item .overlay h4 {
+    background-color: #febd01;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: absolute;
+    color: black;
+    cursor: pointer;
+    animation: galleryIcon .8s ease;
+}
+@keyframes galleryIcon {
+    0% {
+        transform: translateY(20%);opacity: 0;
+    }
+    100% {
+        transform: translateY(0); opacity: 1;
+    }
 }
 
 /* Assignments */
@@ -299,3 +329,35 @@ header .navbar ul li a.active::before {
 .daysAssigments p {
     margin-top: 5%;
 }
+.assignment-text h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: black;
+    position: relative;
+    padding-bottom: 5px;
+    margin-top: 30%;
+}
+.assignment-text .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 35%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+.assignment-text h6 span {
+    color: #febd01;
+}
+.assignment-text h6 {
+    font-size: 16px;
+}
+.daysAssigments a:hover {
+    color: #febd01;
+    background-color: black;
+}
+
+
