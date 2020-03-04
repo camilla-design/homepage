@@ -17,9 +17,10 @@ header {
     position: absolute;
     left: 0px;
     right: 0px;
-    border-bottom: 1px solid #423940;
+    border-bottom: 1px solid white;
     padding: 0px 15px;
     z-index: 10;
+    background-color: black;
 }
 header .row {
     justify-content: space-between;
@@ -33,7 +34,6 @@ header .brand-name a {
     text-transform: uppercase;
     position: relative;
 }
-
 header .navbar ul {
     list-style: none;
     padding: 0;
@@ -47,7 +47,7 @@ header .navbar ul li a {
     font-size: 15px;
     text-decoration: none;
     line-height: 72px;
-    color: #D6C2C2;
+    color: white;
     display: block;
     font-weight: 600;
     position: relative;
@@ -56,7 +56,7 @@ header .navbar ul li a {
 header .navbar ul li a::before {
     content: '';
     height: 3px;
-    background-color: #D6C2C2;
+    background-color: whitesmoke;
     width: 0%;
     position: absolute;
     left: 0px;
@@ -77,11 +77,12 @@ header .navbar ul li a.active::before {
     background-position: center;
     width: 100%;
     position: relative;
+    flex: 0 0 33.33%;
 }
 .home h1 {
     position: absolute;
     top: 30%;
-    color: #D6C2C2;
+    color: white;
     font-size: 70px;
     font-weight: 600;
     margin: 0;
@@ -90,7 +91,7 @@ header .navbar ul li a.active::before {
 .home h2 {
     top: 35%;
     position: absolute;
-    color: #E6DBDB;
+    color: white;
     font-size: 25px;
     font-weight: 500;
     margin: 0;
@@ -105,8 +106,8 @@ header .navbar ul li a.active::before {
 }
 .home .cv-btn a {
     border-radius: 4px;
-    color: #D6C2C2;
-    border: 1px solid #D6C2C2;
+    color: white;
+    border: 1px solid white;
     padding: 12px 25px;
     text-decoration: none;
     font-size: 15px;
@@ -119,12 +120,9 @@ header .navbar ul li a.active::before {
     background-color: #D6C2C2;
     color: black;
 }
-.home .arrow img {
-    background-color: #D6C2C2;
-    position: absolute;
-    width: 35px;
-    top: 90%;
-    margin-left: 40%;
+
+.home-content{
+    flex: 0 0 66.66%;
 }
  /* ABOUT ME */
 .about-me {
@@ -196,4 +194,108 @@ header .navbar ul li a.active::before {
 }
 .about-me .about-content .text p span {
     color: #febd01;
+}
+
+/* assignments */
+
+.assignments {
+    background-color: #f5f8fd;
+    padding: 100px 0px;
+    margin-top: 10%;
+}
+.assignments .section-title h1:before {
+    left: 30%;
+}
+.assignments .assignments-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.assignments .assignments-content .box {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% -20px);
+    border: 1px solid #eeeeee;
+}
+.assignments .assignments-content .box h5 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+.assignments .assignments-content .box p {
+    margin-bottom: 20px;
+}
+.buttons a {
+    background-color: #febd01;
+    color: black;
+    padding: 10px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 100px 15px;
+    background-color: lightgray;
+}
+.portfolio .section-title h1:before {
+    left: 30;
+}
+.portfolio .filter-buttons {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.portfolio .filter-buttons ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.portfolio .filter-buttons ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+.portfolio .filter-buttons ul li.active {
+    color: #febd01;
+    border-bottom: 2px solid #febd01;
+}
+.portfolio .portfolio-gallery {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio .portfolio-gallery .item {
+    flex: 0 0 calc(33.33% - 8px);
+    max-width: calc(33.33% - 8px);
+    margin-bottom: 8px;
+}
+.portfolio .portfolio-gallery .item img {
+    width: 100%;
+    display: block;
+}
+.portfolio .portfolio-gallery .item .overlay {
+    display: none;
+}
+
+/* Assignments */
+.daysAssigments a {
+    background-color: #febd01;
+    color: black;
+    padding: 5px;
+}
+.daysAssigments h5 {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.daysAssigments p {
+    margin-top: 5%;
 }

@@ -15,18 +15,16 @@
     <header>
 
         <div class="container">
-            <div class="row">
+            <div class="row-navbar">
                 <div class="brand-name">
                     <a href="" class="logo"><img src="images/Untitled-1.png" width="50px;"> </a>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">AboutMe</a></li>
-                        <li><a href="">HTML/CSS/DESIGN</a></li>
-                        <li><a href="">Module A</a></li>
-                        <li><a href="">Semester Project</a></li>
-                        <li><a href="">Portfolio</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="html&css.html">HTML/CSS/DESIGN</a></li>
+                        <li><a href="module.html">Module A</a></li>
+                        <li><a href="semester.html">Semester Project</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,7 +36,7 @@
     <!-- Start Home-->
 
     <section class="home">
-        <img src="images/hero-image.jpg">
+        <img src="images/me.jpg">
         <div class="container">
             <div class="row full-screen">
                 <div class="block">
@@ -49,9 +47,6 @@
                             <a href="http://camilla-reppen.com/reppen/cv-camilla.pdf">Download CV</a>
                         </div>
                     </div>
-                </div>
-                <div class="arrow">
-                    <img src="images/icons8-down-arrow-30.png">
                 </div>
             </div>
         </div>
@@ -70,24 +65,132 @@
             <div class="row">
                 <div class="about-content">
                     <div class="row">
-                    <div class="about-img">
-                        <img src="images/img2.jpg" width="400px">
+                        <div class="about-img">
+                            <img src="images/img2.jpg" width="400px">
+                        </div>
+                        <div class="text">
+                            <h4>Camilla Reppen</h4>
+                            <h6>Studying <span>Frontend Development</span> at Noroff School of Technology and Digital
+                                Media
+                            </h6>
+                            <p>My mission is to be a very good Frontend Developer, that can create
+                                websites that the users and clients can use easily use, but at the same time
+                                amaze them, by incredible design and great user experience. I
+                                am very excited to learn more about being a Frontend Developer, and to learn more about
+                                <span>HTML5, CSS3 and JavaScript.</span> </p>
+                            <br>
+                            <h6>What i have <span>Learned</span> at Noroff so far!
+                            </h6>
+                            <p>Design, Web & Communications Technology, HTML5 & CSS3,
+                                Project Methodology, Programming Foundation, Javascript and Interaction Design.
+                            </p>
+                            <br>
+                            <h6>What i will <span>Learn</span> for the summer</h6>
+                            <p>Content Management Systems & Portfolio</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h4>Camilla Reppen</h4>
-                        <h6>Studying <span>Frontend Development</span> at Noroff School of Technology and Digital Media
-                        </h6>
-                        <p>My mission is to be a very good Frontend Developer, that can create 
-                            websites that the users and clients can use easily use, but at the same time 
-                            amaze them, by incredible design and great user experience. I
-                            am very excited to learn more about being a Frontend Developer, and to learn more about
-                        <span>HTML5, CSS3 and JavaScript.</span> </p>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
         <!-- End About Me-->
+
+        <!-- Start My assignments-->
+        <div class="assignments">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h1>My Assignments</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="assignments-content">
+                            <div class="box">
+                                <h5>Design, HTML5, CSS3 and Project Methodology</h5>
+                                <p>Here is my daily assignments that we have<br> delivered during the weeks,
+                                    you will find more<br> in my GitHub account.
+                                </p>
+                                <div class="buttons"><a href="html&css.html">DESIGN, HTML/CSS</a> </div>
+                            </div>
+                            <div class="box">
+                                <h5>Module Assignments</h5>
+                                <p>Here is my weekly assignments that we have<br> delivered during the end of the weeks,<br>
+                                    you will find more in my GitHub account.
+                                </p>
+                                <div class="buttons"> <a href="module.html">MODULE ASSIGNEMENTS</a></div>
+                            </div>
+                            <div class="box">
+                                <h5>Semester project & Exam</h5>
+                                <p>Here is my semester project for UNICEF and <br>my exam project will also come here.
+                                </p>
+                                <div class="buttons"><a href="semester.html">SEMESTER PROJECT</a> </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- End My assignments-->
+
+            <!-- Start portfolio Work-->
+        <section class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h1>Latest Works</h1>
+                    </div>
+                    <div class="row">
+                        <div class="filter-buttons">
+                            <ul>
+                                <li class="active" data-targen="all">All</li>
+                                <li data-targen="html/css">HTML/CSS</li>
+                                <li data-targen="design">Design</li>
+                                <li data-targen="semesterproject">Semester Project</li>
+                                <li data-targen="tryout">Fun Tryout</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-gallery">
+                            <div class="item" data-id="html/css">
+                                <img src="images/re-cycle-image.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus"></span>
+                                    <h4>HTML/CSS</h4>
+                                </div>
+                            </div>
+                            <div class="item" data-id="design">
+                                <img src="images/dog-recue-logo.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus"></span>
+                                    <h4>Design</h4>
+                                </div>
+                            </div>
+                            <div class="item" data-id="semesterproject">
+                                <img src="images/image-unicef.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus"></span>
+                                    <h4>Semester Project</h4>
+                                </div>
+                            </div>
+                            <div class="item" data-id="tryout">
+                                <img src="images/freia-app.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus"></span>
+                                    <h4>Fun Tryout</h4>
+                                </div>
+                            </div>
+                            <div class="item" data-id="tryout">
+                                <img src="images/zalando-app.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus"></span>
+                                    <h4>Fun Tryout</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
 </body>
 
