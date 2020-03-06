@@ -20,7 +20,7 @@ header {
     border-bottom: 1px solid white;
     padding: 0px 15px;
     z-index: 10;
-    background-color: black;
+    
 }
 header .row {
     justify-content: space-between;
@@ -83,7 +83,7 @@ header .navbar ul li a.active::before {
     position: absolute;
     top: 30%;
     color: white;
-    font-size: 70px;
+    font-size: 8vh;
     font-weight: 600;
     margin: 0;
     line-height: 1.2;
@@ -195,6 +195,11 @@ header .navbar ul li a.active::before {
 .about-me .about-content .text p span {
     color: #febd01;
 }
+.follow img {
+    width: 35px;
+    margin-top: 2%;
+
+}
 
 /* assignments */
 
@@ -237,7 +242,7 @@ header .navbar ul li a.active::before {
 /* Portfolio */
 
 .portfolio {
-    padding: 100px 15px;
+    padding: 100px 7px;
     background-color: #f5f8fd;
 }
 .portfolio .section-title h1:before {
@@ -271,12 +276,14 @@ header .navbar ul li a.active::before {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .portfolio .portfolio-gallery .item {
-    flex: 0 0 calc(33.33% - 10px);
-    max-width: calc(33.33% - 10px);
-    margin-bottom: 16px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 8px;
+    position: relative;
+}
+.portfolio .portfolio-gallery .item .inner {
     position: relative;
 }
 .portfolio .portfolio-gallery .item img {
@@ -284,17 +291,33 @@ header .navbar ul li a.active::before {
     display: block;
 }
 .portfolio .portfolio-gallery .item .overlay {
-    display: none;
-}
-.portfolio .portfolio-gallery .item:hover .overlay {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    display: flex;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.portfolio .portfolio-gallery .item:hover .overlay {
+    opacity: 1;
+}
+.portfolio .portfolio-gallery .item .overlay .fa {
+    height: 40px;
+    width: 40px;
+    background-color: #febd01;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .portfolio .portfolio-gallery .item .overlay h4 {
     background-color: #febd01;
@@ -303,17 +326,59 @@ header .navbar ul li a.active::before {
     flex-wrap: wrap;
     flex-direction: column;
     display: absolute;
-    color: black;
-    cursor: pointer;
-    animation: galleryIcon .8s ease;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    animation: galleryText .8s ease;
 }
-@keyframes galleryIcon {
+@keyframes galleryText {
     0% {
         transform: translateY(20%);opacity: 0;
     }
     100% {
         transform: translateY(0); opacity: 1;
     }
+}
+
+.lightbox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.lightbox.show {
+    display: flex;
+}
+.lightbox.hide {
+    display: none;
+}
+.lightbox .close-lightbox {
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    background-color: #febd01;
+    font-size: 40px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    display: block;
 }
 
 /* Assignments */
@@ -360,4 +425,18 @@ header .navbar ul li a.active::before {
     background-color: black;
 }
 
-
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-contact, .footer-follow {
+    flex: 1;
+    margin: 5%;
+}
+.footer-follow img {
+    width: 60px;
+}

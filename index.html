@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row-navbar">
                 <div class="brand-name">
-                    <a href="" class="logo"><img src="images/Untitled-1.png" width="50px;"> </a>
+                    <a href="index.html" class="logo"><img src="images/Untitled-1.png" width="50px;"> </a>
                 </div>
                 <div class="navbar">
                     <ul>
@@ -39,8 +39,8 @@
         <img src="images/me.jpg">
         <div class="container">
             <div class="row full-screen">
+                <div class="home-content">
                 <div class="block">
-                    <div class="home-content">
                         <h1>Camilla Reppen</h1>
                         <h2>Front-End Developer Student</h2>
                         <div class="cv-btn">
@@ -87,6 +87,12 @@
                             <br>
                             <h6>What i will <span>Learn</span> for the summer</h6>
                             <p>Content Management Systems & Portfolio</p>
+                            <div class="follow">
+                                <a href="https://www.facebook.com/camilla.reppen.7"><img
+                                        src="images/iconfinder_facebook_313485.png"></a>
+                                <a href="https://github.com/camilla-design"><img src="images/iconfinder_Github_1298743.png"></a>
+                                <a href="https://www.linkedin.com/in/camilla-reppen-18156719b/"></a><img src="images/6891629_preview.png" width="120px">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,33 +110,33 @@
                 </div>
                 <div class="row">
                     <div class="assignments-content">
-                            <div class="box">
-                                <h5>Design, HTML5, CSS3 and Project Methodology</h5>
-                                <p>Here is my daily assignments that we have<br> delivered during the weeks,
-                                    you will find more<br> in my GitHub account.
-                                </p>
-                                <div class="buttons"><a href="html&css.html">DESIGN, HTML/CSS</a> </div>
-                            </div>
-                            <div class="box">
-                                <h5>Module Assignments</h5>
-                                <p>Here is my weekly assignments that we have<br> delivered during the end of the weeks,<br>
-                                    you will find more in my GitHub account.
-                                </p>
-                                <div class="buttons"> <a href="module.html">MODULE ASSIGNEMENTS</a></div>
-                            </div>
-                            <div class="box">
-                                <h5>Semester project & Exam</h5>
-                                <p>Here is my semester project for UNICEF and <br>my exam project will also come here.
-                                </p>
-                                <div class="buttons"><a href="semester.html">SEMESTER PROJECT</a> </div>
-                            </div>
+                        <div class="box">
+                            <h5>Design, HTML5, CSS3 and Project Methodology</h5>
+                            <p>Here is my daily assignments that we have<br> delivered during the weeks,
+                                you will find more<br> in my GitHub account.
+                            </p>
+                            <div class="buttons"><a href="html&css.html">DESIGN, HTML/CSS</a> </div>
+                        </div>
+                        <div class="box">
+                            <h5>Module Assignments</h5>
+                            <p>Here is my weekly assignments that we have<br> delivered during the end of the weeks,<br>
+                                you will find more in my GitHub account.
+                            </p>
+                            <div class="buttons"> <a href="module.html">MODULE ASSIGNEMENTS</a></div>
+                        </div>
+                        <div class="box">
+                            <h5>Semester project & Exam</h5>
+                            <p>Here is my semester project for UNICEF and <br>my exam project will also come here.
+                            </p>
+                            <div class="buttons"><a href="semester.html">SEMESTER PROJECT</a> </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            <!-- End My assignments-->
+        <!-- End My assignments-->
 
-            <!-- Start portfolio Work-->
+        <!-- Start portfolio Work-->
         <section class="portfolio">
             <div class="container">
                 <div class="row">
@@ -138,43 +144,98 @@
                         <h1>Latest Works</h1>
                     </div>
                     <div class="row">
+                        <div class="filter-buttons">
+                            <ul id="filter-btns">
+                                <li class="active" data-target="all">All</li>
+                                <li data-target="design">Design</li>
+                                <li data-target="html&css">HTML&CSS</li>
+                                <li data-target="fun">Fun</li>
+                                <li data-target="semesterproject">Semester project</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="portfolio-gallery">
-                            <div class="item" data-id="htmlCss">
+                            <div class="item" data-id="html&css">
+                                <div class="inner">
                                 <img src="images/re-cycle-image.jpg" alt="portfolio">
                                 <div class="overlay">
-                                    <h4>HTML/CSS</h4>
+                                    <span class="fa fa-plus">+</span>
+                                    <h4>HTML&CSS</h4>
+                                </div>
                                 </div>
                             </div>
                             <div class="item" data-id="design">
+                                <div class="inner">
                                 <img src="images/dog-recue-logo.jpg" alt="portfolio">
                                 <div class="overlay">
+                                    <span class="fa fa-plus">+</span>
                                     <h4>Design</h4>
+                                </div>
                                 </div>
                             </div>
                             <div class="item" data-id="semesterproject">
+                                <div class="inner">
                                 <img src="images/image-unicef.jpg" alt="portfolio">
                                 <div class="overlay">
+                                    <span class="fa fa-plus">+</span>
                                     <h4>Semester Project</h4>
                                 </div>
-                            </div>
-                            <div class="item" data-id="tryout">
-                                <img src="images/freia-app.jpg" alt="portfolio">
-                                <div class="overlay">
-                                    <h4>Fun Tryout</h4>
                                 </div>
                             </div>
-                            <div class="item" data-id="tryout">
+                            <div class="item" data-id="fun">
+                                <div class="inner">
+                                <img src="images/freia-app.jpg" alt="portfolio">
+                                <div class="overlay">
+                                    <span class="fa fa-plus">+</span>
+                                    <h4>Fun Tryout</h4>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="item" data-id="fun">
+                                <div class="inner">
                                 <img src="images/zalando-app.jpg" alt="portfolio">
                                 <div class="overlay">
+                                    <span class="fa fa-plus">+</span>
                                     <h4>Fun Tryout</h4>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-        
+        <!-- End portfolio Work-->
+
+        <!-- Start lightbox -->
+        <div class="lightbox">
+            <span class="close-lightbox fa fa-close">x</span>
+            <img src="images/zalando-app.jpg" alt="portfolio">
+        </div>
+
+        <!-- End lightbox-->
+       
+        <footer>
+            <div class="footer">
+                <div class="footer-contact">
+                    <h2>Contact:</h2>
+                    <p>Email: camilla.reppen88@gmail.com</p>
+                    <p>Phone: +47 46748737</p>
+                </div>
+                <div class="footer-follow">
+                    <h2>Follow:</h2>
+                    <a href="https://www.facebook.com/camilla.reppen.7"><img
+                            src="images/iconfinder_facebook_313485.png"></a>
+                    <a href="https://github.com/camilla-design"><img src="images/iconfinder_Github_1298743.png"></a>
+                    <a href="https://www.linkedin.com/in/camilla-reppen-18156719b/"></a><img src="images/6891629_preview.png" width="120px">
+                </div>
+            </div>
+        </footer>
+       
+
+        <script src="script.js"></script>
+
+
 </body>
 
 </html>
