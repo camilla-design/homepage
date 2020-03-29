@@ -207,6 +207,7 @@ header .navbar ul li a.active::before {
     padding: 100px 0px;
     margin-top: 10%;
 }
+
 .assignments .section-title h1:before {
     left: 30%;
 }
@@ -222,15 +223,13 @@ header .navbar ul li a.active::before {
     padding: 30px;
     flex: 0 0 calc(33.33% -20px);
     border: 1px solid #eeeeee;
+    width: 300px;
 }
 .assignments .assignments-content .box h5 {
     font-size: 17px;
     font-weight: 600;
     color: #000000;
-    margin: 0;
-}
-.assignments .assignments-content .box p {
-    margin-bottom: 20px;
+    margin: 8%;
 }
 .buttons a {
     background-color: #febd01;
